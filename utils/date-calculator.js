@@ -4,7 +4,7 @@ const dateOfReturn = "Add Later";
 
 const currentDate = new Date();
 
-function daysSinceDeparture(currentDate, dateOfDepature){
+function daysSinceDeparture(){
     let timeDifference = currentDate - dateOfDepature;
     let daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
     return daysDifference;

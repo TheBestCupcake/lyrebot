@@ -6,7 +6,8 @@ module.exports = {
     .setDescription("How long since Lyre has left us."),
 
     async execute(interaction){
-        replyValue = "test reply";
+        const days = daysSinceDeparture();
+        replyValue = `It has been ${days} days since Lyre has left us.`;
         await interaction.reply(replyValue);
     }
 }
